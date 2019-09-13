@@ -4,6 +4,8 @@
 
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .tier-card{
@@ -58,4 +60,11 @@
 }
 .tier_list{
     list-style: disc !important;
+}
+
+
+@media only screen and (max-width: 720px) {
+    .tier-card{
+        margin: 20px 0;
+    }
 }
