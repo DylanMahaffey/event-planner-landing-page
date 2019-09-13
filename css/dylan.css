@@ -1,0 +1,61 @@
+.tier-list{
+    grid-row: 6/ span 1;
+    grid-column: 1/12;
+
+    display: flex;
+    justify-content: center;
+}
+
+.tier-card{
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+
+    background: grey;
+    color: white;
+    border-radius: 20px;
+
+    position: relative;
+}
+.tier-card_blob{
+    position: absolute;
+    /* width: 50px; */
+    z-index: -1;
+
+    transition: all .8s ease;
+}
+
+/* Blob sizes and positions */
+.box-4 .tier-card_blob{
+    width: 300px;
+    top: calc(100% - 350px);
+    right: calc(100% - 230px);
+}
+.box-5 .tier-card_blob{
+    width: 300px;
+    top: calc(100% - 220px);
+    right: calc(100% - 250px);
+}
+.box-6 .tier-card_blob{
+    width: 300px;
+    bottom: calc(100% - 220px);
+    left: calc(100% - 220px);
+}
+.return{
+    width: 0px !important;
+    
+}
+
+/* Tier card content styles */
+.tier_name{
+    text-align: center;
+    font-size: 1.7em !important;
+    text-decoration: underline;
+}
+.tier_price{
+    text-align: center;
+    font-size: 1.4em !important;
+}
+.tier_list{
+    list-style: disc !important;
+}
