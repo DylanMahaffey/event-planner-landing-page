@@ -27,7 +27,7 @@
 
 .box-3{
   grid-row: 5/ span 1;
-  grid-column: 1 / 12;
+  grid-column: 2/ 10;
   text-align: center;
   padding-left: 200px;
   padding-right: 200px;
@@ -82,7 +82,7 @@
 @media only screen and (max-width: 720px) {
   .box-9{
     display: grid;
-    background: red;
+
     grid-row: 9/ span 2;
     grid-column: 2/ 10;
     padding-right:0px;
@@ -113,6 +113,14 @@
   grid-row:12/ span 1;
   grid-column: 2 / 10;
   justify-self: center;
+
+}
+.quote-image-left{
+  max-height: 400px;
+  grid-column: 2/3;
+  right: 500px;
+  z-index: -5;
+  position: absolute;
 
 }
 
