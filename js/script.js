@@ -5,11 +5,11 @@ $( document ).ready(function() {
     // Card Hover
     // 
 
-    $( ".card" ).on( "mouseover", function() {
-        $(this).children(".card-info").css("height", "400px");
+    $( ".tier-card" ).on( "mouseover", function() {
+        $(this).children(".tier-card_blob").removeClass('return');
     });
-    $( ".card" ).on( "mouseleave", function() {
-        $(this).children(".card-info").css("height", "175px");
+    $( ".tier-card" ).on( "mouseleave", function() {
+        $(this).children(".tier-card_blob").addClass('return')
     });
 
     // 
